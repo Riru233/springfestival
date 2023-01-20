@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <title>祝各位亲朋好友春节快乐</title>
+        <style>
+            @keyframes redbag {
+                0% {
+                    opacity: 0;
+                    top:-300px;
+                }
+                100% {
+                    opacity: 1;
+                    top:0;
+                }
+            }
+            @keyframes wishout {
+                0% {
+                    opacity: 0;
+                    transform: translate3d(0, 50%, 0);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translate3d(0, 0, 0);
+                }
+            }
+            body {
+                margin:0px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .bag {
+                animation: redbag;
+                animation-duration: 0.5s;
+            }
+            .wish {
+                color:#fff;
+                font-size:50px;
+                text-align: center;
+                margin-left: 40px;
+                margin-right: 40px;
+                animation: wishout;
+                animation-duration: 1s;
+                display:block;
+                animation-fill-mode:backwards;
+                
+            }
+            .icon {
+                background-color: rgb(0, 167, 89);
+                color: #fff;
+                text-align: center;
+                font-size: 60px;
+                width: auto;
+                margin:0 30%;
+                border-radius: 30px;
+                font-weight: 900;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <video style="top:-100%;position: fixed;" controls="" autoplay="autoplay" name="media"><source src="./RS02060vcleB4SDDFz.mp3" type="audio/mpeg"></video>
+        <div class="bag" style="background-color: red;left:0;top:0;height: 50vh;width:100%;position: relative;border-radius: 0 0 20% 20%;">
+            <br></br>
+            <div class="icon">微信快捷支付</div>
+            <br></br>
+            <div class="wish" style="animation-delay: 0;">有钱，无钱，祈愿平安相伴；有势，无势，期盼平安无事；欢乐，快乐，唯有平安最乐！2023年春节快乐！</div>
+            <br></br>
+            <div class="wish" style="animation-delay: 3s;">爆竹一声除旧岁，爆竹一声新冠去。</div>
+            <br></br>
+            <div class="wish" style="color: rgb(240, 216, 0);animation-delay: 6s;">新年新气象，祝您事业节节高，在新的一年里，祝点进此链接的各位薪水一年更比一年高！</div>
+            <br>
+        </div>
+        <div style="font-size:40px;margin-top:30%;margin-bottom: 10%;text-align: center;">压岁钱自定（下方可更改压岁钱的数量）</div>
+        <input style="font-size: 100px;text-align: center;width:40%;margin:0% 30%;border:0;border-radius: 20px;font-weight: 900;" value="￥200"></input>
+        <a href='https://www.bilibili.com/video/BV1GJ411x7h7/?spm_id_from=333.337.search-card.all.click'>
+            <div style="position: fixed;bottom:0;text-align: center;margin:2%;background-color: goldenrod;color:#fff;font-size: 60px;width: 94%;height:auto;border-radius: 60px;">点击支付</div>
+        </a>
+    </body>
+</html>
