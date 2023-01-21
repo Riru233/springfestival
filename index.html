@@ -56,7 +56,7 @@
         </style>
     </head>
     <body>
-        <video style="top:-100%;position: fixed;" controls="" autoplay="autoplay" name="media"><source src="./RS02060vcleB4SDDFz.mp3" type="audio/mpeg"></video>
+        <video style="top:-100%;position: fixed;" id="audio" controls loop><source src="./RS02060vcleB4SDDFz.mp3" type="audio/mpeg"></video>
         <div class="bag" style="background-color: red;left:0;top:0;height: 50vh;width:100%;position: relative;border-radius: 0 0 20% 20%;">
             <br></br>
             <div class="icon">微信快捷支付</div>
@@ -74,4 +74,11 @@
             <div style="position: fixed;bottom:0;text-align: center;margin:2%;background-color: goldenrod;color:#fff;font-size: 60px;width: 94%;height:auto;border-radius: 60px;">点击支付</div>
         </a>
     </body>
+    <script>
+        const elementAudio = document.getElementById('audio');
+
+        window.WeixinJSBridge && window.WeixinJSBridge.invoke('getNetworkType', {}, () => {
+            elementAudio.play();
+        }, false);
+    </script>
 </html>
